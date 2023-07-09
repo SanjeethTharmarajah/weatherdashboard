@@ -10,7 +10,7 @@ var err1;
 var currentCity2;
 var tmpdate1;
 var tmpdate2;
-var cnt = 1;
+var cnt = 0;
 //function to search city
 //this funtions adds history button aswell
 //this function also stores history in local storage
@@ -87,7 +87,7 @@ function showweather(data) {
         htmldata1+='<br><br><b>Humidity: ' + data.list[0].main.humidity + ' %</b>';
         toppanelEl.innerHTML = htmldata1;
         bottompanelEl.innerHTML="";
-        
+        cnt =1;
         for(var i=1; i<=100; i++){
             forecasthtml = "";
             var date2 = new Date(data.list[i].dt_txt);
@@ -96,7 +96,7 @@ function showweather(data) {
             var year2 = date2.getFullYear();
             tmpdate2 = day2 + '/'  + month2 + '/' + year2;
             if(tmpdate1 != tmpdate2){
-                cnt++
+                cnt++;
                 tmpdate1 = tmpdate2;
                 if(cnt<=5){
                     forecasthtml+= '<div class="forecastcard">';
