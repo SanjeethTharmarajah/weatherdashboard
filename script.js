@@ -98,7 +98,7 @@ function showweather(data) {
             if(tmpdate1 != tmpdate2){
                 cnt++;
                 tmpdate1 = tmpdate2;
-                if(cnt<=5){
+                if(cnt<=6){
                     forecasthtml+= '<div class="forecastcard">';
                     forecasthtml+= '<font size="5"><b> (' + day2 + '/'  + month2 + '/' + year2 + ') <b></font> '
                     forecasthtml+='<img src="https://openweathermap.org/img/wn/' + data.list[i].weather[0].icon + '.png">';
