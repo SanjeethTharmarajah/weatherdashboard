@@ -49,7 +49,7 @@ function setlocation(data){
     if(data.length !== 0){
         err1 = false;
         location1='lat=' + data[0].lat + '&lon=' + data[0].lon;
-        weatherurl = 'https://api.openweathermap.org/data/2.5/forecast?' + location1 + '&cnt=45&units=metric' + '&appid=8f765bd4a4f0c2fbec6ddbde2401a652';
+        weatherurl = 'https://api.openweathermap.org/data/2.5/forecast?' + location1 + '&cnt=100&units=metric' + '&appid=8f765bd4a4f0c2fbec6ddbde2401a652';
         getweather(weatherurl);
     }
     else {
