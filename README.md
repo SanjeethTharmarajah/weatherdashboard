@@ -12,6 +12,8 @@ AS A traveler
 I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 ```
+![image](https://github.com/SanjeethTharmarajah/weatherdashboard/assets/130941252/02fa206a-4d49-49ab-b370-60c393f0f441)
+
 
 ## Acceptance Criteria
 
